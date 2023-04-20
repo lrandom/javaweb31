@@ -1,4 +1,4 @@
-public class Human implements IHuman{
+public class Human implements IHuman {
     @Override
     public void eat() {
         System.out.println("Human eats");
