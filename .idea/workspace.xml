@@ -2,18 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c24b4d25-d349-4f12-b762-91cafe76d9fa" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/ATM.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AmountGreaterThan.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Button.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Calculator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Child.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Human.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IHuman.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IXMan.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OnClickListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Outer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Parent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Xman.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +108,7 @@
       <option name="presentableId" value="Default" />
       <updated>1681992467758</updated>
       <workItem from="1681992471220" duration="4306000" />
-      <workItem from="1682336055127" duration="4242000" />
+      <workItem from="1682336055127" duration="6180000" />
     </task>
     <servers />
   </component>

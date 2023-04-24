@@ -1,10 +1,25 @@
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
+        try {
+            FileInputStream fis = new FileInputStream("name.txt");
+            fis.close();
+
+        } catch (Exception e) {
+
+        }
+
+        try (FileReader fileReader = new FileReader("test.txt")) {
+
+        }
+
+
         //checked exception
         /*try {
             FileInputStream fis = new FileInputStream("name.txt");
@@ -21,10 +36,10 @@ public class Main {
         }
         System.out.println("continue");*/
 
-        System.out.println("Vui lòng nhập vào một số");
+        //System.out.println("Vui lòng nhập vào một số");
 
         //boolean checked = false;
-        int number = 0;
+   /*     int number = 0;
         while (true) {
             try {
                 Scanner scanner = new Scanner(System.in);
@@ -37,6 +52,19 @@ public class Main {
             }
         }
         System.out.println("Số bạn vừa nhập vào là");
-        System.out.println(number);
+        System.out.println(number);*/
+
+        ATM atm = new ATM();
+        try {
+            try {
+                atm.withdraw(100);
+            } catch (Exception e) {
+                throw e;
+            }
+        } catch (AmountGreaterThan e) {
+
+        }
+
+
     }
 }
