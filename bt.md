@@ -4,7 +4,7 @@ Viết chương trình quản lý nhân viên
   ===============================
 1. Nhập thông tin nhân viên
 2. Hiển thị thông tin tất cả nhân viên
-3. Tìm kiếm nhân viên theo mã nv
+3. Tìm kiếm nhân viên theo mã nv  
 4. Sắp xếp nhân viên theo tên
 5. Thoát
 
