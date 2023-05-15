@@ -1,14 +1,10 @@
-Viết chương trình quản lý nhân viên
+Cho một file .txt đầu vào chứa danh sách các link ảnh có dạng như sau
 
-- Nhập thông tin nhân viên: mã nv, tên nv, tuổi, lương
-- Danh sách nhân viên tối đa 20 người
-  ===============================
+https://a.png
+https://b.png
+https://c.png
+https://d.png
+https://e.png
 
-1. Nhập thông tin nhân viên
-2. Hiển thị thông tin tất cả nhân viên
-3. Tìm kiếm nhân viên theo mã nv
-4. Sắp xếp nhân viên theo tên
-5. Thoát
-
-(Lưu ý: Có cơ chế validate dữ liệu nhập vào)
-(Lưu dữ liệu vào file)
+Viết chương trình đọc các link ảnh trong file này,
+sau đó download về máy và lưu vào thư mục images với tên tương ứng.
