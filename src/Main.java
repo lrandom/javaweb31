@@ -1,46 +1,54 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-       /* MyThread myThread = new MyThread();
+        //Load Driver For Mysql
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
 
+            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/javaweb_31", "root", "koodinh@");
+            System.out.println("Connect successfully");
 
-        MyThread myThread1 = new MyThread();
+            /*System.out.println("VUI LÒNG NHẬP TÊN DANH MỤC");
+            Scanner scanner = new Scanner(System.in);
+            String categoryName = scanner.nextLine();
+            Statement stm = connection.createStatement();
+            stm.executeUpdate("INSERT INTO  category(name) VALUES('" + categoryName + "')");*/
 
+            /*Scanner scanner = new Scanner(System.in);
+            System.out.println("Vui lòng chọn ID danh mục muốn cập nhật");
+            int id = scanner.nextInt();
 
-        MyThread2 myThread2 = new MyThread2();
-        Thread thread = new Thread(myThread2);
+            scanner.nextLine();
+            System.out.println("Vui lòng cho biết tên muốn đổi");
+            String name = scanner.nextLine();
 
-        thread.setPriority(10);
-        myThread.setPriority(1);
-        myThread1.setPriority(1);
+            Statement stm = connection.createStatement();
+            String sql = "UPDATE category SET name='" + name + "' WHERE id=" + id;
+            stm.executeUpdate(sql);*/
 
-        myThread.start();
-        //myThread1.start();
-        thread.start();*/
+            /*Scanner scanner = new Scanner(System.in);
+            System.out.println("Vui lòng chọn ID danh mục muốn xóa");
+            int id = scanner.nextInt();
+            Statement stm = connection.createStatement();
+            String sql = "DELETE FROM category WHERE id=" + id;
+            stm.executeUpdate(sql);*/
 
-       /* Count count = new Count();
-        MyThread3 myThread3 = new MyThread3(count);
-        MyThread3 myThread4 = new MyThread3(count);
+            Statement stm = connection.createStatement();
+            String sql = "SELECT * FROM category";
+            ResultSet resultSet = stm.executeQuery(sql);
 
-        myThread3.start();
-        myThread4.start();*/
-        Person person = new Person();
-        Thread thread1 = new Thread(new Runnable() {
-            @Override
-            public void run() {
-                person.wakeup();
-                person.washTeeth();
-                person.goToWork();
-                person.continueToWork();
+            while (resultSet.next()) {
+                System.out.println("ID: " + resultSet.getInt("id"));
+                System.out.println("Name: " + resultSet.getString("name"));
             }
-        });
 
-        Thread thread2 = new Thread(new Runnable() {
-            @Override
-            public void run() {
-                person.eatBreakFast();
-            }
-        });
-        thread1.start();
-        thread2.start();
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
     }
 }

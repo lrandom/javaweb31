@@ -5,19 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c24b4d25-d349-4f12-b762-91cafe76d9fa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Count.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MyThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MyThread2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MyThread3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java31.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Java31.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Count.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyList2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyList3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyList4.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyList5.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MySet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyThread2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyThread3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Person.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +39,10 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
+                    <option name="branchName" value="jbdc" />
+                    <option name="lastUsedInstant" value="1685019332" />
+                  </RecentBranch>
+                  <RecentBranch>
                     <option name="branchName" value="session-10" />
                     <option name="lastUsedInstant" value="1684411553" />
                   </RecentBranch>
@@ -58,10 +57,6 @@
                   <RecentBranch>
                     <option name="branchName" value="session-7" />
                     <option name="lastUsedInstant" value="1682339619" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="master" />
-                    <option name="lastUsedInstant" value="1682339618" />
                   </RecentBranch>
                 </list>
               </option>
@@ -81,27 +76,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "ToolWindowRun.ShowToolbar": "false",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "session-10",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;ToolWindowRun.ShowToolbar&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;jbdc&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Application.Main (3)">
+}</component>
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Java31" />
@@ -139,10 +134,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main (3)" />
         <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main (5)" />
       </list>
     </recent_temporary>
@@ -161,6 +156,9 @@
       <workItem from="1684150981628" duration="2792000" />
       <workItem from="1684403576303" duration="632000" />
       <workItem from="1684411531233" duration="3773000" />
+      <workItem from="1685019066268" duration="1337000" />
+      <workItem from="1685020430760" duration="1753000" />
+      <workItem from="1685022333898" duration="196000" />
     </task>
     <servers />
   </component>
