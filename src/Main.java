@@ -38,14 +38,22 @@ public class Main {
             String sql = "DELETE FROM category WHERE id=" + id;
             stm.executeUpdate(sql);*/
 
-            Statement stm = connection.createStatement();
+            Statement stm = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_UPDATABLE);
             String sql = "SELECT * FROM category";
             ResultSet resultSet = stm.executeQuery(sql);
 
             while (resultSet.next()) {
                 System.out.println("ID: " + resultSet.getInt("id"));
                 System.out.println("Name: " + resultSet.getString("name"));
+                resultSet.updateString("name", "Danh mục " + resultSet.getInt("id"));
+                resultSet.updateRow(); //commit
             }
+
+            //resultSet.previous();//quay lại bản ghi trước đó id =4
+            //resultSet.previous();//quay lại bản ghi trước đó id=3
+            resultSet.absolute(2);
+            resultSet.relative(1);
+            System.out.println("ID: " + resultSet.getInt("id"));
 
         } catch (Exception e) {
             System.out.println(e.getMessage());
